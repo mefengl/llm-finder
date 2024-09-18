@@ -1,45 +1,63 @@
-import { Icon } from '@iconify-icon/react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
-function App() {
+const categories = [
+  {
+    links: [
+      { name: 'ChatGPT', url: 'https://chat.openai.com' },
+      { name: 'Claude', url: 'https://claude.ai' },
+      { name: 'Perplexity', url: 'https://perplexity.ai' },
+    ],
+    name: 'Classic',
+  },
+  {
+    links: [
+      { name: 'v0', url: 'https://v0.dev/chat' },
+      { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
+      { name: 'Groq', url: 'https://groq.com' },
+      { name: 'Grok', url: 'https://x.com/i/grok' },
+    ],
+    name: 'Emerging',
+  },
+  {
+    links: [
+      { name: 'Hugging Face', url: 'https://huggingface.co/chat/' },
+      { name: 'Google AI Studio', url: 'https://aistudio.google.com/app/prompts/new_chat' },
+      { name: 'Groq Console', url: 'https://console.groq.com/playground' },
+      { name: 'OpenAI', url: 'https://platform.openai.com/playground' },
+      { name: 'Mistral Console', url: 'https://console.mistral.ai/build/agents/new' },
+    ],
+    name: 'Playgrounds',
+  },
+]
+
+export default function Component() {
   return (
-    <div className="flex min-h-screen w-96 flex-col items-center justify-center bg-gray-100 p-4">
-      <div className="mb-4 grid grid-cols-2 gap-4">
-        <a
-          className="flex size-24 flex-col items-center justify-center rounded-lg border border-gray-300 bg-white shadow-md transition hover:bg-gray-50"
-          href="https://www.xiaohongshu.com/explore"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon
-            icon="simple-icons:xiaohongshu"
-            width="52"
-          />
-        </a>
-        <a
-          className="flex size-24 flex-col items-center justify-center rounded-lg border border-gray-300 bg-white shadow-md transition hover:bg-gray-50"
-          href="https://www.douyin.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon
-            icon="simple-icons:tiktok"
-            width="28"
-          />
-        </a>
-        <a
-          className="flex size-24 flex-col items-center justify-center rounded-lg border border-gray-300 bg-white shadow-md transition hover:bg-gray-50"
-          href="https://2.taobao.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon
-            icon="fluent:food-fish-24-regular"
-            width="40"
-          />
-        </a>
+    <div className="mx-auto w-96 space-y-6 p-4">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {categories.map(category => (
+          <Card className="shadow-lg" key={category.name}>
+            <CardHeader>
+              <CardTitle>{category.name}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                {category.links.map(link => (
+                  <li key={link.name}>
+                    <a
+                      className="rounded text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      href={link.url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   )
 }
-
-export default App
