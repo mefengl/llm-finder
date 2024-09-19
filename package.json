@@ -1,9 +1,9 @@
 {
-  "name": "App 网页版启动器：小红书，抖音，闲鱼",
+  "name": "LLM App Finder: AI tool without AI",
   "type": "module",
   "version": "1.1.1",
   "private": true,
-  "description": "比起这个插件，也许浏览器书签更好 :)",
+  "description": "The world of AI models is big, don't limit yourself to just one.",
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
