@@ -11,6 +11,12 @@ const categories = [
   },
   {
     links: [
+      { name: 'Google NotebookLM', url: 'https://notebooklm.google.com' },
+    ],
+    name: 'Apps',
+  },
+  {
+    links: [
       { name: 'v0', url: 'https://v0.dev/chat' },
       { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
       { name: 'Groq', url: 'https://groq.com' },
