@@ -28,6 +28,21 @@ const categories = [
     ],
     name: 'Playgrounds',
   },
+  {
+    links: [
+      { name: 'Google Gemini API Changelog', url: 'https://ai.google.dev/gemini-api/docs/changelog' },
+      { name: 'Groq Changelog', url: 'https://console.groq.com/docs/changelog' },
+      { name: 'OpenAI Changelog', url: 'https://platform.openai.com/docs/changelog' },
+      { name: 'Mistral Changelog', url: 'https://docs.mistral.ai/getting-started/changelog' },
+      { name: 'Anthropic API Changelog', url: 'https://docs.anthropic.com/en/release-notes/api' },
+      { name: 'Claude Apps Changelog', url: 'https://docs.anthropic.com/en/release-notes/claude-apps' },
+      { name: 'Anthropic System Prompts Changelog', url: 'https://docs.anthropic.com/en/release-notes/system-prompts' },
+      { name: 'Google Gemini Updates', url: 'https://gemini.google.com/updates' },
+      { name: 'v0 Changelog', url: 'https://v0.dev/changelog' },
+      { name: 'Perplexity Changelog', url: 'https://docs.perplexity.ai/changelog/changelog' },
+    ],
+    name: 'Changelog',
+  },
 ]
 
 export default function Component() {
