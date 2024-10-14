@@ -46,6 +46,7 @@ const categories = [
       { name: 'Google Gemini Updates', url: 'https://gemini.google.com/updates' },
       { name: 'v0 Changelog', url: 'https://v0.dev/changelog' },
       { name: 'Perplexity Changelog', url: 'https://docs.perplexity.ai/changelog/changelog' },
+      { name: 'Cursor Changelog', url: 'https://changelog.cursor.com' },
     ],
     name: 'Changelog',
   },
