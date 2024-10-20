@@ -50,6 +50,18 @@ const categories = [
     ],
     name: 'Changelog',
   },
+  {
+    links: [
+      { name: 'Cohere Pricing', url: 'https://cohere.com/pricing' },
+    ],
+    name: 'Price',
+  },
+  {
+    links: [
+      { name: 'Cohere Rate Limits', url: 'https://docs.cohere.com/docs/rate-limits' },
+    ],
+    name: 'Rate Limits',
+  },
 ]
 
 export default function Component() {
