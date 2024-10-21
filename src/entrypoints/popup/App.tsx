@@ -54,6 +54,7 @@ const categories = [
   {
     links: [
       { name: 'Cohere Pricing', url: 'https://cohere.com/pricing' },
+      { name: 'Hyperbolic AI Inference Pricing', url: 'https://docs.hyperbolic.xyz/docs/hyperbolic-ai-inference-pricing' },
     ],
     name: 'Price',
   },
@@ -62,6 +63,7 @@ const categories = [
       { name: 'Cohere Rate Limits', url: 'https://docs.cohere.com/docs/rate-limits' },
       { name: 'OpenRouter Rate Limits', url: 'https://openrouter.ai/docs/limits' },
       { name: 'huggingface Rate Limits', url: 'https://huggingface.co/docs/api-inference/rate-limits' },
+      { name: 'Groq Rate Limits', url: 'https://console.groq.com/settings/limits' },
     ],
     name: 'Rate Limits',
   },
