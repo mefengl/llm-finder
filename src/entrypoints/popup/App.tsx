@@ -21,6 +21,7 @@ const categories = [
       { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
       { name: 'Groq', url: 'https://groq.com' },
       { name: 'Grok', url: 'https://x.com/i/grok' },
+      { name: 'glhf', url: 'https://glhf.chat/' },
     ],
     name: 'Emerging',
   },
@@ -61,6 +62,12 @@ const categories = [
       { name: 'Cohere Rate Limits', url: 'https://docs.cohere.com/docs/rate-limits' },
     ],
     name: 'Rate Limits',
+  },
+  {
+    links: [
+      { name: 'API', url: 'https://glhf.chat/users/settings/api' },
+    ],
+    name: 'API',
   },
 ]
 
