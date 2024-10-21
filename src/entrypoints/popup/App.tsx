@@ -61,6 +61,7 @@ const categories = [
     links: [
       { name: 'Cohere Rate Limits', url: 'https://docs.cohere.com/docs/rate-limits' },
       { name: 'OpenRouter Rate Limits', url: 'https://openrouter.ai/docs/limits' },
+      { name: 'huggingface Rate Limits', url: 'https://huggingface.co/docs/api-inference/rate-limits' },
     ],
     name: 'Rate Limits',
   },
