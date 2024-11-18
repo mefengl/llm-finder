@@ -19,6 +19,18 @@ const categories = [
   {
     links: [
       { name: 'v0', url: 'https://v0.dev/chat' },
+      { name: 'bolt', url: 'https://bolt.new/' },
+    ],
+    name: 'Web',
+  },
+  {
+    links: [
+      { name: 'Recraft', url: 'https://www.recraft.ai' }, // Added recraft.ai
+    ],
+    name: 'Image',
+  },
+  {
+    links: [
       { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
       { name: 'Groq', url: 'https://groq.com' },
       { name: 'Grok', url: 'https://x.com/i/grok' },
