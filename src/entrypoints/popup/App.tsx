@@ -73,6 +73,12 @@ const categories = [
     ],
     name: 'API',
   },
+  {
+    links: [
+      { name: 'LM Arena', url: 'https://lmarena.ai/?leaderboard' },
+    ],
+    name: 'Leaderboards',
+  },
 ]
 
 export default function Component() {
