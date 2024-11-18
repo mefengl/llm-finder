@@ -1,7 +1,7 @@
 {
   "name": "LLM Finder: AI tool without AI",
   "type": "module",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "private": true,
   "description": "The world of AI models is big, don't limit yourself to just one.",
   "scripts": {
