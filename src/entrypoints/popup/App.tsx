@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 const categories = [
   {
@@ -83,32 +84,39 @@ const categories = [
 
 export default function Component() {
   return (
-    <div className="mx-auto w-96 space-y-6 p-4">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto w-full max-w-4xl space-y-6 p-4">
+      <Tabs className="w-full" defaultValue={categories[0].name}>
+        <TabsList className="mb-4">
+          {categories.map(category => (
+            <TabsTrigger key={category.name} value={category.name}>
+              {category.name}
+            </TabsTrigger>
+          ))}
+        </TabsList>
         {categories.map(category => (
-          <Card className="shadow-lg" key={category.name}>
-            <CardHeader>
-              <CardTitle>{category.name}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                {category.links.map(link => (
-                  <li key={link.name}>
+          <TabsContent key={category.name} value={category.name}>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {category.links.map(link => (
+                <Card className="shadow-lg" key={link.name}>
+                  <CardHeader>
+                    <CardTitle>{link.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
                     <a
                       className="rounded text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
                       href={link.url}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      {link.name}
+                      {link.url}
                     </a>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
         ))}
-      </div>
+      </Tabs>
     </div>
   )
 }
