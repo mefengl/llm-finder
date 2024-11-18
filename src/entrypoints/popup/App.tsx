@@ -36,7 +36,7 @@ const categories = [
       { name: 'Grok', url: 'https://x.com/i/grok' },
       { name: 'glhf', url: 'https://glhf.chat/' },
     ],
-    name: 'Emerging',
+    name: 'Chat',
   },
   {
     links: [
