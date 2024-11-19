@@ -36,6 +36,7 @@ const categories = [
       { name: 'Grok', url: 'https://x.com/i/grok' },
       { name: 'glhf', url: 'https://glhf.chat/' },
       { name: 'Cerebras', url: 'https://inference.cerebras.ai' },
+      { name: 'Hermes', url: 'https://hermes.nousresearch.com/' },
     ],
     name: 'Chat',
   },
