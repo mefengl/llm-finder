@@ -26,14 +26,9 @@ const categories = [
     links: [
       { name: 'v0', url: 'https://v0.dev/chat' },
       { name: 'bolt', url: 'https://bolt.new/' },
-    ],
-    name: 'Web',
-  },
-  {
-    links: [
       { name: 'Recraft', url: 'https://www.recraft.ai' },
     ],
-    name: 'Image',
+    name: 'Create',
   },
   {
     links: [
@@ -72,45 +67,30 @@ const categories = [
   },
   {
     links: [
-      { name: 'Cohere Pricing', url: 'https://cohere.com/pricing' },
-      { name: 'Hyperbolic AI Inference Pricing', url: 'https://docs.hyperbolic.xyz/docs/hyperbolic-ai-inference-pricing' },
-    ],
-    name: 'Price',
-  },
-  {
-    links: [
+      { name: 'API Settings (glhf)', url: 'https://glhf.chat/users/settings/api' },
       { name: 'Cohere Rate Limits', url: 'https://docs.cohere.com/docs/rate-limits' },
       { name: 'OpenRouter Rate Limits', url: 'https://openrouter.ai/docs/limits' },
       { name: 'huggingface Rate Limits', url: 'https://huggingface.co/docs/api-inference/rate-limits' },
       { name: 'Groq Rate Limits', url: 'https://console.groq.com/settings/limits' },
+      { name: 'Cohere Pricing', url: 'https://cohere.com/pricing' },
+      { name: 'Hyperbolic AI Pricing', url: 'https://docs.hyperbolic.xyz/docs/hyperbolic-ai-inference-pricing' },
     ],
-    name: 'Rate Limits',
-  },
-  {
-    links: [
-      { name: 'API', url: 'https://glhf.chat/users/settings/api' },
-    ],
-    name: 'API',
+    name: 'API & Limits',
   },
   {
     links: [
       { name: 'LM Arena', url: 'https://lmarena.ai/?leaderboard' },
-    ],
-    name: 'Leaderboards',
-  },
-  {
-    links: [
       { name: 'WorldSim Browser', url: 'https://worldsim.nousresearch.com/browser' },
       { name: 'WorldSim Console', url: 'https://worldsim.nousresearch.com/console' },
       { name: 'Oasis', url: 'https://oasis.decart.ai' },
     ],
-    name: 'Games',
+    name: 'Games & Stats',
   },
 ]
 
 export default function Component() {
   return (
-    <div className="w-full max-w-4xl p-4 mx-auto space-y-6">
+    <div className="mx-auto w-full max-w-4xl space-y-6 p-4">
       <Tabs className="w-full" defaultValue={categories[0].name}>
         <TabsList className="mb-4">
           {categories.map(category => (
@@ -121,7 +101,7 @@ export default function Component() {
         </TabsList>
         {categories.map(category => (
           <TabsContent key={category.name} value={category.name}>
-            <div className="md:grid-cols-2 lg:grid-cols-3 grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {category.links.map(link => (
                 <Card className="shadow-lg" key={link.name}>
                   <CardHeader>
@@ -129,7 +109,7 @@ export default function Component() {
                   </CardHeader>
                   <CardContent>
                     <a
-                      className="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-600 rounded"
+                      className="rounded text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
                       href={link.url}
                       rel="noopener noreferrer"
                       target="_blank"
