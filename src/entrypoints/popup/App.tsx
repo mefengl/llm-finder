@@ -14,7 +14,7 @@ const categories = [
     links: [
       { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
       { name: 'Groq', url: 'https://groq.com' },
-      { name: 'Grok', url: 'https://x.com/i/grok' },
+      { name: 'Grok', url: 'https://x.com/i/grok' }, // Added link
       { name: 'glhf', url: 'https://glhf.chat/' },
       { name: 'Cerebras', url: 'https://inference.cerebras.ai' },
       { name: 'Lambda', url: 'https://lambda.chat' },
