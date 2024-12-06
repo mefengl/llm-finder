@@ -90,6 +90,12 @@ const categories = [
     ],
     name: 'Games & Stats',
   },
+  {
+    links: [
+      { name: 'Hyperbolic', url: 'https://app.hyperbolic.xyz/' },
+    ],
+    name: 'Pay',
+  },
 ]
 
 export default function Component() {
