@@ -87,6 +87,16 @@ const resources: Resource[] = [
   { category: 'Pay', name: 'Hyperbolic', url: 'https://app.hyperbolic.xyz/' },
 ]
 
+function getDomain(url: string): string {
+  try {
+    const { hostname } = new URL(url)
+    return hostname.replace(/^www\./, '')
+  }
+  catch {
+    return url
+  }
+}
+
 function ResourceItem({ resource }: { resource: Resource }) {
   return (
     <div
@@ -94,7 +104,7 @@ function ResourceItem({ resource }: { resource: Resource }) {
       onClick={() => window.open(resource.url, '_blank')}
     >
       <span className="text-sm text-gray-900">{resource.name}</span>
-      <span className="text-xs text-gray-500">{resource.url}</span>
+      <span className="text-xs text-gray-500">{getDomain(resource.url)}</span>
     </div>
   )
 }
