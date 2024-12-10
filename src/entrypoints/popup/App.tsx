@@ -32,6 +32,7 @@ const resources: Resource[] = [
   { category: 'Chat', name: 'Cerebras', url: 'https://inference.cerebras.ai' },
   { category: 'Chat', name: 'Lambda', url: 'https://lambda.chat' },
   { category: 'Chat', name: 'NousResearch', url: 'https://hermes.nousresearch.com/' },
+  { category: 'Chat', name: 'SambaNova', url: 'https://cloud.sambanova.ai/' },
 
   // Create
   { category: 'Create', name: 'v0', url: 'https://v0.dev/chat' },
@@ -76,6 +77,7 @@ const resources: Resource[] = [
   { category: 'API & Limits', name: 'Groq Rate Limits', url: 'https://console.groq.com/settings/limits' },
   { category: 'API & Limits', name: 'Cohere Pricing', url: 'https://cohere.com/pricing' },
   { category: 'API & Limits', name: 'Hyperbolic AI Pricing', url: 'https://docs.hyperbolic.xyz/docs/hyperbolic-ai-inference-pricing' },
+  { category: 'API & Limits', name: 'SambaNova Pricing', url: 'https://cloud.sambanova.ai/pricing' },
 
   // Games & Stats
   { category: 'Games & Stats', name: 'LM Arena', url: 'https://lmarena.ai/?leaderboard' },
