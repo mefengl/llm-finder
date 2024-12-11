@@ -115,9 +115,15 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState<string>('')
 
   const filteredResources = useMemo(() => {
+    if (!searchTerm)
+      return resources
+
+    const searchTermLower = searchTerm.toLowerCase()
     return resources.filter((resource) => {
-      return resource.name.toLowerCase().includes(searchTerm.toLowerCase())
-        || resource.category.toLowerCase().includes(searchTerm.toLowerCase())
+      return resource.name.toLowerCase().includes(searchTermLower)
+        || resource.url.toLowerCase().includes(searchTermLower)
+        || resource.category.toLowerCase().includes(searchTermLower)
+        || getDomain(resource.url).toLowerCase().includes(searchTermLower)
     })
   }, [searchTerm])
 
