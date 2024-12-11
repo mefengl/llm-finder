@@ -187,7 +187,11 @@ export default function App() {
               <DialogTitle>About</DialogTitle>
               <DialogDescription>
                 <div className="mb-4 text-sm text-gray-700">
-                  Made by Alan 😎
+                  Made by
+                  {' '}
+                  <a className="underline" href="https://x.com/mefengl" rel="noopener noreferrer" target="_blank">Alan</a>
+                  {' '}
+                  😎
                 </div>
                 <div className="mb-4 text-xs text-gray-500">
                   Credits:
