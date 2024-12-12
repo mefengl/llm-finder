@@ -38,6 +38,7 @@ const resources: Resource[] = [
   { category: 'Create', name: 'v0', url: 'https://v0.dev/chat' },
   { category: 'Create', name: 'bolt', url: 'https://bolt.new/' },
   { category: 'Create', name: 'Recraft', url: 'https://www.recraft.ai' },
+  { category: 'Create', name: 'Niji Journey', url: 'https://nijijourney.com' },
 
   // Apps
   { category: 'Apps', name: 'Google NotebookLM', url: 'https://notebooklm.google.com' },
