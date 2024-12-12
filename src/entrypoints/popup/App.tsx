@@ -51,10 +51,13 @@ const resources: Resource[] = [
   // Playgrounds
   { category: 'Playgrounds', name: 'Hugging Face', url: 'https://huggingface.co/chat/' },
   { category: 'Playgrounds', name: 'Google AI Studio', url: 'https://aistudio.google.com/app/prompts/new_chat' },
+  { category: 'Playgrounds', name: 'Google AI Studio Live', url: 'https://aistudio.google.com/live' },
+  { category: 'Playgrounds', name: 'Google Vertex AI', url: 'https://console.cloud.google.com/vertex-ai/studio' },
   { category: 'Playgrounds', name: 'Groq Console', url: 'https://console.groq.com/playground' },
   { category: 'Playgrounds', name: 'OpenAI', url: 'https://platform.openai.com/playground' },
   { category: 'Playgrounds', name: 'Mistral Console', url: 'https://console.mistral.ai/build/agents/new' },
   { category: 'Playgrounds', name: 'Cerebras', url: 'https://cloud.cerebras.ai' },
+  { category: 'Playgrounds', name: 'Vercel AI', url: 'https://sdk.vercel.ai/playground' },
 
   // Changelog
   { category: 'Changelog', name: 'Google Gemini API Changelog', url: 'https://ai.google.dev/gemini-api/docs/changelog' },
