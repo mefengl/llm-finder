@@ -85,6 +85,7 @@ const resources: Resource[] = [
 
   // Games & Stats
   { category: 'Games & Stats', name: 'LM Arena', url: 'https://lmarena.ai/?leaderboard' },
+  { category: 'Games & Stats', name: 'LM Arena Web', url: 'https://web.lmarena.ai/leaderboard' },
   { category: 'Games & Stats', name: 'WorldSim Browser', url: 'https://worldsim.nousresearch.com/browser' },
   { category: 'Games & Stats', name: 'WorldSim Console', url: 'https://worldsim.nousresearch.com/console' },
   { category: 'Games & Stats', name: 'Oasis', url: 'https://oasis.decart.ai' },
